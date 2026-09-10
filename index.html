@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Andrés Díaz Hernández · Portafolio de Desarrollo de Software</title>
+    <meta name="description" content="Portafolio profesional de desarrollo de software: proyectos full stack, IA y aplicaciones móviles.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#inicio" class="logo">D. Díaz</a>
+        <nav class="nav" aria-label="Navegación principal">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección Inicio / Hero -->
+        <section class="hero" id="inicio">
+            <div class="hero-contenido">
+                <span class="etiqueta">Estudiante de Ingeniería en Informática</span>
+                <h1>Desarrollo software que resuelve problemas reales</h1>
+                <p>Backend con microservicios, integración de IA y aplicaciones móviles. Foco en arquitecturas ordenadas, pruebas y documentación clara.</p>
+                <div class="hero-acciones">
+                    <a href="#proyectos" class="boton">Ver proyectos</a>
+                    <a href="https://github.com/Sxtnix" class="boton boton-secundario" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </div>
+            <div class="hero-panel" aria-hidden="true">
+                <div class="panel-barra">
+                    <span></span><span></span><span></span>
+                </div>
+                <pre class="panel-codigo"><code>@RestController
+public class PacienteController {
+
+    @GetMapping("/api/pacientes")
+    public List&lt;Paciente&gt; listar() {
+        return service.findAll();
+    }
+}</code></pre>
+            </div>
+        </section>
+
+        <!-- Sección Sobre mí -->
+        <section class="seccion" id="sobre-mi">
+            <div class="titulo-seccion">
+                <p class="eyebrow">Conóceme</p>
+                <h2>Sobre mí</h2>
+            </div>
+            <div class="sobre-mi-contenido">
+                <p>Soy estudiante de Ingeniería en Informática, enfocado en el desarrollo de software backend, la integración de soluciones con inteligencia artificial y el desarrollo de aplicaciones móviles. Me interesa construir sistemas bien organizados por capas, con validaciones sólidas, pruebas automatizadas y documentación que facilite el trabajo en equipo.</p>
+                <p>He trabajado con arquitecturas de microservicios en Java y Spring Boot, con agentes de IA con observabilidad en Python, y con desarrollo mobile en Kotlin. Este portafolio reúne parte de ese trabajo, desarrollado tanto de forma individual como colaborativa.</p>
+            </div>
+        </section>
+
+        <!-- Sección Habilidades -->
+        <section class="seccion seccion-alterna" id="habilidades">
+            <div class="titulo-seccion">
+                <p class="eyebrow">Stack tecnológico</p>
+                <h2>Habilidades</h2>
+            </div>
+            <div class="grid-cards">
+                <article class="card">
+                    <h3>Backend</h3>
+                    <p>Java, Spring Boot, Spring Data JPA, Spring Cloud Gateway, arquitectura de microservicios, MySQL, Flyway.</p>
+                </article>
+                <article class="card">
+                    <h3>Inteligencia Artificial</h3>
+                    <p>Agentes con RAG, observabilidad de modelos (logs, métricas, trazabilidad), integración con APIs de modelos de lenguaje.</p>
+                </article>
+                <article class="card">
+                    <h3>Mobile</h3>
+                    <p>Desarrollo de aplicaciones Android con Kotlin, buenas prácticas de nivel intermedio.</p>
+                </article>
+                <article class="card">
+                    <h3>Frontend</h3>
+                    <p>HTML5 semántico, CSS Grid y Flexbox, JavaScript para validación e interactividad.</p>
+                </article>
+                <article class="card">
+                    <h3>Pruebas y calidad</h3>
+                    <p>JUnit 5, Mockito, Pytest, documentación de APIs con Swagger/OpenAPI, colecciones Postman.</p>
+                </article>
+                <article class="card">
+                    <h3>Herramientas</h3>
+                    <p>Git y GitHub con control de versiones, Maven, despliegue de sitios estáticos.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Proyectos -->
+        <section class="seccion" id="proyectos">
+            <div class="titulo-seccion">
+                <p class="eyebrow">Portafolio</p>
+                <h2>Mis proyectos</h2>
+            </div>
+            <div class="lista-proyectos">
+                <article class="proyecto">
+                    <div class="proyecto-info">
+                        <h3>Evaluación Transversal · HealthTech Full Stack</h3>
+                        <p>Backend de una plataforma clínica construido con arquitectura de microservicios: 11 servicios independientes (pacientes, citas, especialidades, exámenes, farmacia, fichas, hospitalización, inventario, personal, proveedores y recetas) más un API Gateway que centraliza las rutas. Incluye migraciones con Flyway, manejo global de excepciones, pruebas unitarias y documentación Swagger/OpenAPI por servicio.</p>
+                        <ul class="proyecto-tags">
+                            <li>Java 17</li>
+                            <li>Spring Boot</li>
+                            <li>Spring Cloud Gateway</li>
+                            <li>MySQL</li>
+                            <li>JUnit &amp; Mockito</li>
+                        </ul>
+                        <a href="https://github.com/Sxtnix/Evaluacion-ET-Fullstack" class="enlace-proyecto" target="_blank" rel="noopener noreferrer">Ver repositorio →</a>
+                    </div>
+                </article>
+
+                <article class="proyecto">
+                    <div class="proyecto-info">
+                        <h3>HealthTech ET · Observabilidad de Agente IA</h3>
+                        <p>Agente HealthTech con recuperación de información local (RAG) y conexión opcional a modelos externos. Implementa logs estructurados con trazabilidad (trace_id, span_id), métricas de latencia y error, detección básica de anomalías, un dashboard en Streamlit para monitorear el comportamiento del agente y un registro de auditoría de las decisiones tomadas.</p>
+                        <ul class="proyecto-tags">
+                            <li>Python</li>
+                            <li>RAG</li>
+                            <li>Streamlit</li>
+                            <li>Observabilidad</li>
+                            <li>Pytest</li>
+                        </ul>
+                        <a href="https://github.com/MartinDiaz00/EvaluacionTransversal" class="enlace-proyecto" target="_blank" rel="noopener noreferrer">Ver repositorio →</a>
+                    </div>
+                </article>
+
+                <article class="proyecto">
+                    <div class="proyecto-info">
+                        <h3>Desafíos Aplicaciones Móviles</h3>
+                        <p>Colección de actividades prácticas desarrolladas en Kotlin, orientadas a demostrar conocimientos de nivel intermedio en desarrollo de aplicaciones móviles Android.</p>
+                        <ul class="proyecto-tags">
+                            <li>Kotlin</li>
+                            <li>Android</li>
+                        </ul>
+                        <a href="https://github.com/Sxtnix/Desafios_AplicacionesMoviles" class="enlace-proyecto" target="_blank" rel="noopener noreferrer">Ver repositorio →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Contacto y Formulario -->
+        <section class="seccion seccion-alterna" id="contacto">
+            <div class="titulo-seccion">
+                <p class="eyebrow">Comunícate</p>
+                <h2>Contacto</h2>
+            </div>
+            <form id="form-contacto" class="formulario" novalidate>
+                <div class="grupo-input">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+                    <span class="error-mensaje" data-error-for="nombre"></span>
+                </div>
+                <div class="grupo-input">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="correo@ejemplo.com">
+                    <span class="error-mensaje" data-error-for="email"></span>
+                </div>
+                <div class="grupo-input">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    <span class="error-mensaje" data-error-for="mensaje"></span>
+                </div>
+                <button type="submit" class="boton">Enviar mensaje</button>
+                <p id="exito-mensaje" class="exito-oculto" role="status"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Diego Andrés Díaz Hernández · Portafolio Profesional</p>
+        <a href="https://github.com/Sxtnix" target="_blank" rel="noopener noreferrer">github.com/Sxtnix</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
