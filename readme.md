@@ -29,8 +29,8 @@ Portafolio/
 
 ## Despliegue
 
-- Sitio desplegado: _(agregar enlace de GitHub Pages)_
-- Repositorio: _(agregar enlace del repositorio)_
+- Sitio desplegado: _(https://sxtnix.github.io/Portafolio/)_
+- Repositorio: _(https://github.com/Sxtnix/Portafolio.git)_
 
 ## Autor
 
